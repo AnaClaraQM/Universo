@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Universo</title>
+</head>
+
+<body>
+  <header>
+     <h1>Conheça o Universo</h1>
+     <p>Ache o que você procura quando pensa em planetas, satélites e estrelas.</p>
+     <nav class="links-navegacao">
+      <a href="#" onclick="mudarTipo('planetas'); fazerPesquisa();">Planetas</a>
+      <a href="#" onclick="mudarTipo('satelites'); fazerPesquisa();">Satélites</a>
+      <a href="#" onclick="mudarTipo('estrelas'); fazerPesquisa();">Estrelas</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <input type="text" placeholder="Digite aqui o que procura" id="campo-pesquisa"> <br>
+      <button onclick="fazerPesquisa()">Pesquisar</button>
+    </section>
+    <section class="resultados" id="resultados"></section>
+    </main>
+  <footer>
+    <p>2024 - Todos os direitos reservados</p>
+  </footer>
+  <script src="dados.js"></script>
+  <script src="satelites.js"></script>
+  <script src="estrelas.js"></script>
+  <script src="app.js"></script>
+  <script>
+    // Define o tipo de pesquisa inicial
+    window.tipoPesquisa = 'planetas'; // Tipo padrão ao carregar a página
+</script>
+</body>
+
+</html>
